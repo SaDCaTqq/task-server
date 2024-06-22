@@ -14,11 +14,11 @@ server.use(cors())
 server.use('/users',authRouter)
 
 const DataBase = mysql.createConnection({
-    host:'127.0.0.1',
+    host:'10.16.0.1',
     port:'3306',
-    user: 'root',
-    password:'sa12345',
-    database: 'task_db'
+    user: 'default-db',
+    password:'8OQ&SpCQIl3M',
+    database: 'default-db'
 })
 
 addQuery = (sqlQuery) => {
