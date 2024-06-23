@@ -13,7 +13,8 @@ const PORT = 3000;
 server.use(cors())
 server.use('/users',authRouter)
 
-const DataBase = mysql.createConnection({
+const DataBase = mysql.createPool({
+    conntectionLimit: 5,
     host:'fafajophe.beget.app',
     port:'3306',
     user: 'default-db',
