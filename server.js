@@ -14,8 +14,8 @@ server.use(cors())
 server.use('/users',authRouter)
 
 const DataBase = mysql.createConnection({
-    host:'10.16.0.1:3306',
-    //port:'3306',
+    host:'10.16.0.1',
+    port:'3306',
     user: 'default-db',
     password:'8OQ&SpCQIl3M',
     database: 'default-db'
